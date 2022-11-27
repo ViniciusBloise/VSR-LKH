@@ -133,9 +133,7 @@ GainType FindTour()
         }
         //Include time information on trials
         if (ProblemType == TSP)
-            printf("-Trial %d %d %f\n", Trial, BetterCost, GetTime() - StartTime);
-        else
-            printf("-Trial %d %d %d %f\n", Trial, BetterPenalty, BetterCost, GetTime() - StartTime);
+            printf("-Trial %d %lli %f\n", Trial, BetterCost, GetTime() - StartTime);
     }
     
     if (Dimension <= 200)
