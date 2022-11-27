@@ -70,4 +70,5 @@ void PrintStatistics()
     printff
         ("Time.min = %0.2f sec., Time.avg = %0.2f sec., Time.max = %0.2f sec.\n",
          fabs(_TimeMin), fabs(TimeSum) / _Runs, fabs(TimeMax));
+    printff("Time.total = %0.2f sec.\n", GetTime() - StartTime);
 }

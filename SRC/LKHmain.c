@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     if (argc >= 2)
         ParameterFileName = argv[1];
     ReadParameters();
+    StartTime = LastTime = GetTime();
     MaxMatrixDimension = 20000;
     MergeWithTour = Recombination == IPT ? MergeWithTourIPT :
         MergeWithTourGPX2;
@@ -160,6 +161,6 @@ int main(int argc, char *argv[])
         SRandom(++Seed);
     }
     PrintStatistics();
-	system("pause");
+	//system("pause");
     return EXIT_SUCCESS;
 }

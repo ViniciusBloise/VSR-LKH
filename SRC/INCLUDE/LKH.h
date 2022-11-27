@@ -278,6 +278,7 @@ short Reversed; /* Boolean used to indicate whether a tour has
 int Run;        /* Current run number */
 int Runs;       /* Total number of runs */
 unsigned Seed;  /* Initial seed for random number generation */
+double StartTime;       /* Time when execution starts */
 int StopAtOptimum;      /* Specifies whether a run will be terminated if 
                            the tour length becomes equal to Optimum */
 int Subgradient;        /* Specifies whether the Pi-values should be 
