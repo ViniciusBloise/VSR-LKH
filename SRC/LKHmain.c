@@ -161,6 +161,9 @@ int main(int argc, char *argv[])
         SRandom(++Seed);
     }
     PrintStatistics();
-	//system("pause");
+    for (i = 0; i <= DimensionSaved; i++) {
+	printf ("%d ", BestTour[i]);
+    }
+    printf ("\n");
     return EXIT_SUCCESS;
 }
